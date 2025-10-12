@@ -6,6 +6,6 @@ import com.__100.backend.dto.SignupRequestDto;
 
 public interface AuthService {
 
-    JwtResponseDto signup(SignupRequestDto signupRequest);
-    JwtResponseDto login(LoginRequestDto loginRequest);
+//    JwtResponseDto signup(SignupRequestDto signupRequest);
+//    JwtResponseDto login(LoginRequestDto loginRequest);
 }
