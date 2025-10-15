@@ -15,6 +15,9 @@ public class SignupRequestDto {
     @Email(message = "Email is not valid")
     private String email;
 
+    @NotBlank(message = "role cannot be empty")
+    private String role;
+
     @NotBlank(message = "Password cannot be empty")
     private  String password;
 
