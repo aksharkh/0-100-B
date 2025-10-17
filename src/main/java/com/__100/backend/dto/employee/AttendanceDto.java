@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Data
 public class AttendanceDto {
     private Long id;
-    private String employeeId;
+    private Long employeeId;
     private String employeeCode;
     private LocalDate date;
     private LocalDateTime punchInTime;
