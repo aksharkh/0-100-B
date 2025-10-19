@@ -26,7 +26,6 @@ public class EmployeeController {
     }
 
     @GetMapping
-    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<Page<EmployeeDto>> getAll(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "20") int size){
         return ResponseEntity.ok(employeeService.getAll(PageRequest.of(page,size)));
     }
